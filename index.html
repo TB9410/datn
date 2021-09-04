@@ -1,0 +1,3704 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Your Store</title>
+	<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+	<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<script src="catalog/view/javascript/mahardhi/jquery.elevateZoom.min.js"></script>
+	<script src="catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="catalog/view/javascript/mahardhi/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="catalog/view/javascript/mahardhi/quickview.js"></script>
+
+	<link href="catalog/view/theme/mahardhi/stylesheet/mahardhi/owl.carousel.min.css" rel="stylesheet">
+	<link href="catalog/view/theme/mahardhi/stylesheet/mahardhi/owl.theme.default.min.css" rel="stylesheet">
+
+	<style>
+		:root {
+			--primary-color: #111111;
+			--primary-hover-color: #ffffff;
+			--secondary-color: #16202c;
+			--secondary-hover-color: #ffc843;
+			--secondary-light-color: #777777;
+			--background-color: #f7f7f7;
+			--border-color: #e5e5e5
+		}
+	</style>
+	<link href="catalog/view/theme/mahardhi/stylesheet/stylesheet.css" rel="stylesheet">
+	<link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" type="text/css" rel="stylesheet"
+		media="screen" />
+	<link href="catalog/view/javascript/jquery/swiper/css/opencart.css" type="text/css" rel="stylesheet"
+		media="screen" />
+	<script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.js"></script>
+	<script src="catalog/view/javascript/mahardhi/jquery.cookie.js"></script>
+	<script src="catalog/view/javascript/mahardhi/countdown.js"></script>
+	<script src="catalog/view/javascript/common.js"></script>
+	<script src="catalog/view/javascript/mahardhi/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="catalog/view/theme/mahardhi/stylesheet/mahardhi/jquery-ui.min.css">
+	<script src="catalog/view/javascript/mahardhi/custom.js"></script>
+	<link href="/image/catalog/cart.png" rel="icon" />
+</head>
+
+<body class="common-home">
+	<div class="top-header">
+		<nav id="top">
+		</nav>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="header-top">
+						<div class="customer-support col-md-4 hidden-xs">
+							<i class="fa fa-phone"></i>
+							<div>
+								<span>Customer Support</span>
+								<span>123-456-7890</span>
+							</div>
+						</div>
+
+						<!-- start logo -->
+						<div id="logo" class="col-md-4">
+							<a href="#"><img src="/image/catalog/logo.png" title="Your Store" alt="Your Store"
+									class="img-responsive" /></a>
+						</div>
+
+						<div class="header-links col-md-4">
+							<!-- start account -->
+							<div id="header_ac" class="dropdown">
+								<a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="fa fa-user"></i>
+									<span class="account-main hidden-sm hidden-xs">
+										<span>My Account</span>
+										<span>Register</span>
+									</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right account-link-toggle">
+									<li><a href="#">Register</a>
+									</li>
+									<li><a href="#">Login</a>
+									</li>
+
+									<li> <a href="#" id="wishlist-total" title="WishList (0)">WishList (0)</a></li>
+									<li class="currency">
+										<div class="currency-box">
+											<form action="#" method="post" enctype="multipart/form-data"
+												id="form-currency">
+												<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+													<span class="drop-text">Currency:</span>
+													<span>$</span>
+
+												</button>
+												<ul class="currency-dropdown curr">
+													<li>
+														<button class="currency-select btn btn-link btn-block"
+															type="button" name="EUR">€ Euro</button>
+													</li>
+													<li>
+														<button class="currency-select btn btn-link btn-block"
+															type="button" name="GBP">£ Pound Sterling</button>
+													</li>
+													<li>
+														<button class="currency-select btn btn-link btn-block"
+															type="button" name="USD">$ US Dollar</button>
+													</li>
+												</ul>
+												<input type="hidden" name="code" value="" />
+												<input type="hidden" name="redirect" value="#" />
+											</form>
+										</div>
+									</li>
+									<li class="language">
+										<div class="language-box">
+											<form action="#" method="post" enctype="multipart/form-data"
+												id="form-language">
+												<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+													<span class="drop-text">Language:</span>
+													<span class="code">en-gb</span>
+												</button>
+												<ul class="language-dropdown lang">
+													<li>
+														<button class="btn btn-link btn-block language-select"
+															type="button" name="en-gb"><img
+																src="catalog/language/en-gb/en-gb.png" alt="English"
+																title="English" /> English</button>
+													</li>
+													<li>
+														<button class="btn btn-link btn-block language-select"
+															type="button" name="ar"><img
+																src="catalog/language/ar/ar.png" alt="Arabic"
+																title="Arabic" /> Arabic</button>
+													</li>
+												</ul>
+												<input type="hidden" name="code" value="" />
+												<input type="hidden" name="redirect" value="#" />
+											</form>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- start cart -->
+							<div class="header_cart">
+								<div id="cart" class="btn-group btn-block">
+									<button type="button" data-toggle="dropdown" data-loading-text="Loading..."
+										class="btn btn-inverse btn-block btn-lg dropdown-toggle"><span
+											id="cart-total"><span class="hidden-sm hidden-xs">My Cart</span> <span
+												class="cart-item">0<span class="hidden-sm hidden-xs"> items
+													$0.00</span></span></span>
+									</button>
+									<ul class="dropdown-menu header-cart-toggle pull-right ">
+										<li>
+											<p class="text-center product-cart-empty">Your shopping cart is empty!</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="header-left col-lg-3 col-md-3 hidden-sm hidden-xs">
+							<div class="menu-list">
+								<div class="box-categories"><span>All Categories</span></div>
+							</div>
+						</div>
+						<div class="header-center col-md-6 col-xs-3">
+							<!-- start menu -->
+							<nav id="menu" class="navbar navbar_menu">
+								<div class="navbar-header">
+									<button type="button" class="btn btn-navbar navbar-toggle" id="btnMenuBar"><span
+											class="addcart-icon"></span></button>
+								</div>
+								<div id="topCategoryList" class="main-menu menu-navbar clearfix" data-more=More>
+									<div class="menu-close hidden-lg hidden-md"><span id="category"
+											class="">Menu</span><i class="icon-close"></i></div>
+									<ul class="nav navbar-nav">
+										<li class="menulist home"><a id="home" href="">Home</a></li>
+										<li class="menulist"><a href="#">Specials</a>
+										</li>
+										<li class="menulist"><a href="#">Contact</a>
+										</li>
+										<li class="menulist"><a href="#">Site
+												Map</a></li>
+										<li class="menulist"><a href="#">Brands</a>
+										</li>
+										<li class="blog"><a href="#">Blogs</a>
+										</li>
+
+									</ul>
+								</div>
+							</nav>
+
+						</div>
+						<div class="header-right col-md-3 col-xs-9">
+							<!-- start search -->
+							<div class="btn_search">
+								<div class="header-search">
+									<div id="mahardhiSearch" class="input-group mahardhi-search">
+										<input type="text" name="search" value="" placeholder="Search here..."
+											class="form-control input-lg ui-autocomplete-input" />
+										<span class="btn-search input-group-btn">
+											<button type="button" class="btn btn-default btn-lg"><i
+													class="fa fa-search"></i></button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<aside id="column-left" class="col-sm-3 hidden-xs">
+				<div class="main-category left-column-main-category hidden-sm hidden-xs">
+					<div class="vertical-category-wrapper navbar-collapse navbar-ex2-collapse">
+						<div class="vertical-category" data-more=More&nbsp;Categories data-less=Less&nbsp;Categories>
+							<ul class="category-list nav navbar-nav">
+
+								<li class="menu-item dropdown">
+									<a href="" class="dropdown-toggle">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/3-20x20.png" alt="shop" /></span>
+										Electronics
+									</a>
+									<div class="dropdown-menu dropdown-wrapper">
+										<div class="dropdown-inner">
+											<ul class="list-unstyled megamenu-dropdown column3">
+												<li class="menu-item dropdown">
+													<a href="#" class="dropdown-toggle"> Apple Laptop</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled childs_1">
+
+																<li class="menu-item ">
+																	<a href="">Kadhais</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Macbook
+																		Air</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Macbook
+																		Pro</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="menu-item dropdown">
+													<a href="" class="dropdown-toggle">Hugo Boss</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled childs_1">
+
+																<li class="menu-item ">
+																	<a href="">Boss
+																		Watch</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Casio</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Movado</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="menu-item dropdown">
+													<a href="" class="dropdown-toggle">Philips</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled childs_1">
+
+																<li class="menu-item ">
+																	<a href="">Floating</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Macbook</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Bajaj</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="menu-item dropdown">
+													<a href="" class="dropdown-toggle">Iwatch</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled childs_1">
+
+																<li class="menu-item ">
+																	<a href="">Citizen</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Series
+																		5</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Sony</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+												<li class="menu-item dropdown">
+													<a href="" class="dropdown-toggle">Mixers</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled childs_1">
+
+																<li class="menu-item ">
+																	<a href="">Apple
+																		Laptop</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Laptops</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="">Watch
+																		SE</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/5-20x20.png" alt="shop" /></span>
+										Headphones
+									</a>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/4-20x20.png" alt="shop" /></span>
+										Moniters
+									</a>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/6-20x20.png" alt="shop" /></span>
+										Laptops
+									</a>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/11-20x20.png" alt="shop" /></span>
+										Smartphones
+									</a>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/10-20x20.png" alt="shop" /></span>
+										Printer
+									</a>
+								</li>
+
+
+								<li class="menu-item dropdown">
+									<a href="" class="dropdown-toggle">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/9-20x20.png" alt="shop" /></span>
+										Portable Speakers
+									</a>
+									<div class="dropdown-menu single-dropdown">
+										<div class="dropdown-inner">
+											<ul class="list-unstyled megamenu-dropdown">
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">Crompton</a>
+												</li>
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">Electric
+														Kettles</a>
+												</li>
+
+												<li class="menu-item dropdown">
+													<a href="" class="dropdown-toggle single-dropdown1">Motorola</a>
+													<div class="dropdown-menu">
+														<div class="dropdown-inner">
+															<ul class="list-unstyled megamenu-dropdown">
+
+																<li class="menu-item ">
+																	<a href="" class="dropdown-toggle">Phone</a>
+																</li>
+
+																<li class="menu-item ">
+																	<a href="" class="dropdown-toggle">Realme</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">Redmi</a>
+												</li>
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">Samsung</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/11-20x20.png" alt="shop" /></span>
+										Smartphones
+									</a>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/1-20x20.png" alt="shop" /></span>
+										Airpods
+									</a>
+								</li>
+
+
+								<li class="menu-item dropdown">
+									<a href="" class="dropdown-toggle">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/2-20x20.png" alt="shop" /></span>
+										Camera
+									</a>
+									<div class="dropdown-menu single-dropdown">
+										<div class="dropdown-inner">
+											<ul class="list-unstyled megamenu-dropdown">
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">Headphones</a>
+												</li>
+
+												<li class="menu-item ">
+													<a href="" class="dropdown-toggle single-dropdown1">cameras</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+
+								<li class="menu-item">
+									<a href="">
+										<span class="category-img hidden-sm hidden-xs"><img
+												src="/image/cache/catalog/categories/11-20x20.png" alt="shop" /></span>
+										tablet
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial-block">
+					<div class="testimonial-container box-module">
+						<div class="page-title">
+							<h3 class="toggled">Our Testimonial</h3>
+						</div>
+						<div class="owl-container">
+							<div class="block-content">
+								<div class="slideTestimonial owl-carousel owl-theme">
+
+									<div class="row-items">
+										<div class="testimonial-images">
+											<img src="/image/cache/catalog/testimonial/1-100x100.jpg" alt="Alexa Gomez"
+												class="m-image-auto m-auto img-circle">
+										</div>
+										<div class="testimonial-content">
+
+											<div class="testimonial-text">
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+													industry. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco
+													laboris nisi ut aliquip ex ea commod
+													...</p>
+											</div>
+											<div class="testimonial-author">Alexa Gomez</div>
+											<div class="testimonial-customer">Customer</div>
+										</div>
+									</div>
+
+
+									<div class="row-items">
+										<div class="testimonial-images">
+											<img src="/image/cache/catalog/testimonial/2-100x100.jpg"
+												alt="Luies Charles" class="m-image-auto m-auto img-circle">
+										</div>
+										<div class="testimonial-content">
+
+											<div class="testimonial-text">
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+													industry. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco
+													laboris nisi ut aliquip ex ea commod
+													...</p>
+											</div>
+											<div class="testimonial-author">Luies Charles</div>
+											<div class="testimonial-customer">Customer</div>
+										</div>
+									</div>
+
+
+									<div class="row-items">
+										<div class="testimonial-images">
+											<img src="/image/cache/catalog/testimonial/3-100x100.jpg" alt="Michael Jack"
+												class="m-image-auto m-auto img-circle">
+										</div>
+										<div class="testimonial-content">
+
+											<div class="testimonial-text">
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+													industry. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco
+													laboris nisi ut aliquip ex ea commod
+													...</p>
+											</div>
+											<div class="testimonial-author">Michael Jack</div>
+											<div class="testimonial-customer">Customer</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function () {
+						const direct = $('html').attr('dir');
+						const items = 1;
+						$(".slideTestimonial").each(function () {
+							const sliderOptions = {
+								loop: false,
+								nav: true,
+								navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+								dots: false,
+								items: items,
+								autoplay: true,
+								autoplayTimeout: 3000,
+								responsiveRefreshRate: 200,
+								responsive: {
+									0: { items: 1 },
+									1201: { items: 1 }
+								}
+							};
+
+							if (direct == 'rtl') sliderOptions['rtl'] = true;
+							$(this).owlCarousel(sliderOptions);
+						});
+					});
+				</script>
+				<div class="swiper-viewport">
+					<div id="banner0" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="/image/cache/catalog/banners/cat-leftbanner-290x450.jpg"
+										alt="Left Banner" class="img-responsive" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box all-products special left-vertical-product">
+					<div class="box-heading">
+						<div class="box-content">
+							<div class="page-title toggled">
+								<h3>Specials Products</h3>
+							</div>
+							<div class="block_box">
+								<div id="special-carousel" class="box-product  vertical-carousel  clearfix"
+									data-items="1">
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/8-268x268.jpg" alt="iPhone"
+														title="iPhone" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg" title="iPhone"
+														alt="iPhone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a
+															href="https://opencart.mahardhi.com/MT05/ecart/02/index.php?route=product/product&amp;product_id=36">iPhone</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$110.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/1-268x268.jpg" alt="IWatch"
+														title="IWatch" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/11-268x268.jpg"
+														title="IWatch" alt="IWatch" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">IWatch</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$86.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/12-268x268.jpg"
+														alt="JBL Headphone" title="JBL Headphone"
+														class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/3-268x268.jpg"
+														title="JBL Headphone" alt="JBL Headphone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">JBL
+															Headphone</a></h4>
+													<p class="price">
+														<span class="price-new">$98.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/3-268x268.jpg"
+														alt="Samsung TV" title="Samsung TV" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg"
+														title="Samsung TV" alt="Samsung TV" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Samsung
+															TV</a></h4>
+													<p class="price">
+														<span class="price-new">$86.00</span><span
+															class="price-old">$98.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/14-268x268.jpg"
+														alt="Sony Headphone" title="Sony Headphone"
+														class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/1-268x268.jpg"
+														title="Sony Headphone" alt="Sony Headphone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Sony
+															Headphone</a></h4>
+													<p class="price">
+														<span class="price-new">$98.00</span><span
+															class="price-old">$242.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/10-268x268.jpg"
+														alt="Sony TV" title="Sony TV" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg"
+														title="Sony TV" alt="Sony TV" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Sony
+															TV</a></h4>
+													<p class="price">
+														<span class="price-new">$116.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/13-268x268.jpg"
+														alt="Toaster" title="Toaster" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/4-268x268.jpg"
+														title="Toaster" alt="Toaster" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Toaster</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$110.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news mt-30">
+					<div class="newsletterblock">
+						<div class="newsletter-form">
+							<div class="page-title">
+								<h3>Newsletter</h3>
+							</div>
+							<div class="block-content">
+								<div class="news-info">
+									<div class="news-dec">
+										<i class="fa fa-paper-plane"></i>
+										<div class="title-text">Sign Up & Get News</div>
+										<div class="news-description">Subscribe to our newsletters now and stay up
+											to
+											date with new collections and exclusive offers.</div>
+									</div>
+								</div>
+								<!-- newsletter box -->
+								<form name="frmnewsletter" id="frmnewsletter" method="post">
+									<div class="subscribe-form">
+										<input type="email" name="newsletter_usr_email" id="newsletter_usr_email"
+											placeholder="Enter e-mail here..."
+											class="form-control input-lg inputNew txtemail" required>
+										<button type="submit" class="subscribe-btn">Subscribe</button>
+									</div>
+									<!-- newsletter notofication -->
+									<div class="newsletter-message"></div>
+									<!-- newsletter notofication -->
+								</form>
+								<!-- newsletter box -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<div id="content" class="col-sm-6">
+				<div class="slideshow">
+					<div class="swiper-viewport">
+						<div id="slideshow0" class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide text-center Main-banner1">
+									<a href="#"><img src="/image/cache/catalog/banners/mainbanner1-1130x560.jpg"
+											alt="Main-banner1" class="img-responsive" /></a>
+								</div>
+								<div class="swiper-slide text-center Main-banner2">
+									<a href="#"><img src="/image/cache/catalog/banners/mainbanner2-1130x560.jpg"
+											alt="Main-banner2" class="img-responsive" /></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination slideshow0"></div>
+						<div class="swiper-pager hidden">
+							<div class="swiper-button-prev"><i class="fa fa-caret-left"></i></div>
+							<div class="swiper-button-next"><i class="fa fa-caret-right"></i></div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$('#slideshow0').swiper({
+						mode: 'horizontal',
+						slidesPerView: 1,
+						pagination: '.slideshow0',
+						paginationClickable: true,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						spaceBetween: 0,
+						autoplay: 4000,
+						autoplayDisableOnInteraction: true,
+						loop: true
+					});
+				</script>
+
+				<div class="box all-products latest mt-30">
+					<div class="box-heading">
+						<div class="box-content">
+							<div class="page-title toggled">
+								<h3>Latest Products</h3>
+							</div>
+							<div class="block_box row">
+								<div id="latest-carousel" class="box-product  product-carousel  clearfix"
+									data-items="4">
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/6-258x258.jpg"
+															alt="Fridge" title="Fridge" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/2-258x258.jpg"
+															title="Fridge" alt="Fridge" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Fridge</a>
+														</h4>
+														<p class="price">
+															$241.99
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/7-258x258.jpg"
+															alt="Dell Laptop" title="Dell Laptop"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/1-258x258.jpg"
+															title="Dell Laptop" alt="Dell Laptop" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Dell
+																Laptop</a></h4>
+														<p class="price">
+															$122.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/11-258x258.jpg"
+															alt="Microwaves" title="Microwaves"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/10-258x258.jpg"
+															title="Microwaves" alt="Microwaves" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Microwaves</a>
+														</h4>
+														<p class="price">
+															$122.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/8-258x258.jpg"
+															alt="JBL Headphone" title="JBL Headphone"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/9-258x258.jpg"
+															title="JBL Headphone" alt="JBL Headphone" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">JBL
+																Headphone</a></h4>
+														<p class="price">
+															$1,202.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/9-258x258.jpg"
+															alt="Speaker" title="Speaker" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/10-258x258.jpg"
+															title="Speaker" alt="Speaker" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Speaker</a>
+														</h4>
+														<p class="price">
+															$2,000.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/2-258x258.jpg"
+															alt="Tablet" title="Tablet" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/10-258x258.jpg"
+															title="Tablet" alt="Tablet" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Tablet</a>
+														</h4>
+														<p class="price">
+															$1,202.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/14-258x258.jpg"
+															alt="Boss Watch" title="Boss Watch"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/10-258x258.jpg"
+															title="Boss Watch" alt="Boss Watch" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Boss
+																Watch</a></h4>
+														<p class="price">
+															$602.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/15-258x258.jpg"
+															alt="Boat Headphone" title="Boat Headphone"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/10-258x258.jpg"
+															title="Boat Headphone" alt="Boat Headphone" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Boat
+																Headphone</a></h4>
+														<p class="price">
+															$122.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/2-258x258.jpg"
+															alt="HP Laptop" title="HP Laptop" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/3-258x258.jpg"
+															title="HP Laptop" alt="HP Laptop" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">HP
+																Laptop</a></h4>
+														<p class="price">
+															$122.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/5-258x258.jpg"
+															alt="IPad" title="IPad" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/9-258x258.jpg"
+															title="IPad" alt="IPad" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">IPad</a>
+														</h4>
+														<p class="price">
+															$123.20
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/8-258x258.jpg"
+															alt="iPhone" title="iPhone" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/9-258x258.jpg"
+															title="iPhone" alt="iPhone" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">iPhone</a>
+														</h4>
+														<p class="price">
+															<span class="price-new">$110.00</span><span
+																class="price-old">$122.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/13-258x258.jpg"
+															alt="Toaster" title="Toaster" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/4-258x258.jpg"
+															title="Toaster" alt="Toaster" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Toaster</a>
+														</h4>
+														<p class="price">
+															<span class="price-new">$110.00</span><span
+																class="price-old">$122.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/1-258x258.jpg"
+															alt="IWatch" title="IWatch" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/11-258x258.jpg"
+															title="IWatch" alt="IWatch" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">IWatch</a>
+														</h4>
+														<p class="price">
+															<span class="price-new">$86.00</span><span
+																class="price-old">$122.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/14-258x258.jpg"
+															alt="Sony Headphone" title="Sony Headphone"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/1-258x258.jpg"
+															title="Sony Headphone" alt="Sony Headphone" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Sony
+																Headphone</a></h4>
+														<p class="price">
+															<span class="price-new">$98.00</span><span
+																class="price-old">$242.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/7-258x258.jpg"
+															alt="Casio" title="Casio" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/1-258x258.jpg"
+															title="Casio" alt="Casio" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Casio</a>
+														</h4>
+														<p class="price">
+															$122.00
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/3-258x258.jpg"
+															alt="Samsung TV" title="Samsung TV"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/9-258x258.jpg"
+															title="Samsung TV" alt="Samsung TV" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Samsung
+																TV</a></h4>
+														<p class="price">
+															<span class="price-new">$86.00</span><span
+																class="price-old">$98.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/10-258x258.jpg"
+															alt="Sony TV" title="Sony TV" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/9-258x258.jpg"
+															title="Sony TV" alt="Sony TV" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Sony
+																TV</a></h4>
+														<p class="price">
+															<span class="price-new">$116.00</span><span
+																class="price-old">$122.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/4-258x258.jpg"
+															alt="Nokia" title="Nokia" class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/6-258x258.jpg"
+															title="Nokia" alt="Nokia" />
+													</a>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">Nokia</a>
+														</h4>
+														<p class="price">
+															$337.99
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-content">
+										<div class="product-layout  col-xs-12">
+											<div class="product-thumb transition clearfix">
+												<div class="image">
+													<a href="">
+														<img src="/image/cache/catalog/products/12-258x258.jpg"
+															alt="JBL Headphone" title="JBL Headphone"
+															class="img-responsive" />
+														<img class="img-responsive hover-img"
+															src="/image/cache/catalog/products/3-258x258.jpg"
+															title="JBL Headphone" alt="JBL Headphone" />
+													</a>
+													<div class="sale-text"><span class="section-sale">On
+															Sale!</span>
+													</div>
+													<div class="button-group">
+														<button type="button" class="wishlist" data-toggle="tooltip"
+															title="Add To WishList" onclick="wishlist.add('36');"><i
+																class="fa fa-heart"></i></button>
+														<button type="button" data-toggle="tooltip"
+															class="quickview-button" title="Quickview"
+															onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+																class="fa fa-eye"></i></button>
+														<button type="button" class="compare" data-toggle="tooltip"
+															title="Add To Compare" onclick="compare.add('36');"><i
+																class="fa fa-exchange"></i></button>
+													</div>
+												</div>
+												<div class="thumb-description clearfix">
+													<div class="caption">
+														<h4 class="product-title"><a href="">JBL
+																Headphone</a></h4>
+														<p class="price">
+															<span class="price-new">$98.00</span><span
+																class="price-old">$122.00</span>
+														</p>
+														<div class="rating">
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+															<span class="fa fa-stack"><i
+																	class="fa fa-star fa-stack-2x"></i><i
+																	class="fa fa-star-o fa-stack-2x"></i></span>
+														</div>
+
+														<button type="button" class="addcart" title="Add to Cart"
+															onclick="">Add to Cart</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner-outer container-outer html1">
+					<div class="html1-inner">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="banner1">
+									<div class="inner1"> <a href="#"><img src="image/catalog/banners/banner1.jpg" alt=""
+												class="img-responsive"></a> </div>
+									<div class="inner2">
+										<div class="promo-text-box">
+											<div class="promo-desc">Get Save 35% Off</div>
+											<h3 class="promo-title">Samsung Charger</h3> <a class="button btn"
+												href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="banner2">
+									<div class="inner1"> <a href="#"><img src="image/catalog/banners/banner2.jpg" alt=""
+												class="img-responsive"></a> </div>
+									<div class="inner2">
+										<div class="promo-text-box">
+											<div class="promo-desc">Get Save 45% Off</div>
+											<h3 class="promo-title">Google Home Mini</h3> <a class="button btn"
+												href="#">shop now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box mblog section mt-30">
+					<div class="box-content">
+						<div class="page-title section">
+							<h3>From Our Blog</h3>
+						</div>
+						<div class="block_box row">
+							<div id="blogcarousel" class="blogs-block  blog-carousel  clearfix" data-items="2">
+
+								<div class="blog-block product-layout  col-xs-12">
+									<div class="item">
+										<div class="blog-info">
+											<div class="image">
+												<a href=""><img src="/image/cache/catalog/blogs/blog1-210x210.jpg"
+														alt="" title="Consectetur adipiscing..."
+														class="img-responsive" /></a>
+												<div class="zoom-post">
+													<a class="hover-zoom"
+														href="/image/cache/catalog/blogs/blog1-1450x1450.jpg"
+														data-lightbox="example-set"
+														title="Consectetur adipiscing..."></a>
+													<a class="hover-post" href=""></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="caption blog-description">
+											<div class="link_info">
+												<span class="block-date">December 05, 2019</span>
+
+												<span class="blog-comment hidden">2 Comments</span>
+
+												<h4 class=""><a href="">Consectetur
+														adipiscing...</a></h4>
+												<div class="blog-text">
+													<span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting indus...</span>
+												</div>
+												<a class="blog-read btn-default" onclick="" title="Read more">Read
+													more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog-block product-layout  col-xs-12">
+									<div class="item">
+										<div class="blog-info">
+											<div class="image">
+												<a href=""><img src="/image/cache/catalog/blogs/blog3-210x210.jpg"
+														alt="" title="Lorem Ipsum Dolo..." class="img-responsive" /></a>
+												<div class="zoom-post">
+													<a class="hover-zoom"
+														href="/image/cache/catalog/blogs/blog3-1450x1450.jpg"
+														data-lightbox="example-set" title="Lorem Ipsum Dolo..."></a>
+													<a class="hover-post" href=""></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="caption blog-description">
+											<div class="link_info">
+												<span class="block-date">December 05, 2019</span>
+
+												<span class="blog-comment hidden">1 Comments</span>
+
+												<h4 class=""><a href="">Lorem
+														Ipsum Dolo...</a></h4>
+												<div class="blog-text">
+													<span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting indus...</span>
+												</div>
+												<a class="blog-read btn-default" onclick="" title="Read more">Read
+													more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog-block product-layout  col-xs-12">
+									<div class="item">
+										<div class="blog-info">
+											<div class="image">
+												<a href=""><img src="/image/cache/catalog/blogs/blog4-210x210.jpg"
+														alt="" title="Nam nec rhoncus est ..."
+														class="img-responsive" /></a>
+												<div class="zoom-post">
+													<a class="hover-zoom"
+														href="/image/cache/catalog/blogs/blog4-1450x1450.jpg"
+														data-lightbox="example-set" title="Nam nec rhoncus est ..."></a>
+													<a class="hover-post" href=""></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="caption blog-description">
+											<div class="link_info">
+												<span class="block-date">December 05, 2019</span>
+
+												<span class="blog-comment hidden">1 Comments</span>
+
+												<h4 class=""><a href="">Nam
+														nec rhoncus est ...</a></h4>
+												<div class="blog-text">
+													<span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting indus...</span>
+												</div>
+												<a class="blog-read btn-default" onclick="" title="Read more">Read
+													more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog-block product-layout  col-xs-12">
+									<div class="item">
+										<div class="blog-info">
+											<div class="image">
+												<a href=""><img src="/image/cache/catalog/blogs/blog1-210x210.jpg"
+														alt="" title="Duis pulvinar augue nisi..."
+														class="img-responsive" /></a>
+												<div class="zoom-post">
+													<a class="hover-zoom"
+														href="/image/cache/catalog/blogs/blog1-1450x1450.jpg"
+														data-lightbox="example-set"
+														title="Duis pulvinar augue nisi..."></a>
+													<a class="hover-post" href=""></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="caption blog-description">
+											<div class="link_info">
+												<span class="block-date">March 12, 2021</span>
+
+												<span class="blog-comment hidden">0 Comments</span>
+
+												<h4 class=""><a href="">Duis
+														pulvinar augue nisi...</a></h4>
+												<div class="blog-text">
+													<span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting indus...</span>
+												</div>
+												<a class="blog-read btn-default" onclick="" title="Read more">Read
+													more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="blog-block product-layout  col-xs-12">
+									<div class="item">
+										<div class="blog-info">
+											<div class="image">
+												<a href=""><img src="/image/cache/catalog/blogs/blog2-210x210.jpg"
+														alt="" title="The standard Lorem Ipsum..."
+														class="img-responsive" /></a>
+												<div class="zoom-post">
+													<a class="hover-zoom"
+														href="/image/cache/catalog/blogs/blog2-1450x1450.jpg"
+														data-lightbox="example-set"
+														title="The standard Lorem Ipsum..."></a>
+													<a class="hover-post" href=""></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="caption blog-description">
+											<div class="link_info">
+												<span class="block-date">December 05, 2019</span>
+
+												<span class="blog-comment hidden">1 Comments</span>
+
+												<h4 class=""><a href="">The
+														standard Lorem Ipsum...</a></h4>
+												<div class="blog-text">
+													<span>Lorem Ipsum is simply dummy text of the printing and
+														typesetting indus...</span>
+												</div>
+												<a class="blog-read btn-default" onclick="" title="Read more">Read
+													more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					$(document).ready(function () {
+						const direc = $('html').attr('dir');
+
+						$('.blog-carousel').each(function () {
+							if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+								$(this).addClass('owl-carousel owl-theme');
+								const items = $(this).data('items') || 2;
+								const sliderOptions = {
+									loop: false,
+									nav: true,
+									navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+									dots: false,
+									items: items,
+									responsiveRefreshRate: 200,
+									responsive: {
+										0: { items: 1 },
+										481: { items: items }
+									}
+								};
+								if (direc == 'rtl') sliderOptions['rtl'] = true;
+								$(this).owlCarousel(sliderOptions);
+							}
+						});
+					});
+				</script>
+				<div class="box all-products featured">
+					<div class="box-heading">
+						<div class="box-content">
+							<div class="page-title toggled">
+								<h3>Featured Products</h3>
+							</div>
+							<div class="block_box row">
+
+
+								<div id="featured-carousel" class="box-product  product-carousel  clearfix"
+									data-items="4">
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/5-268x268.jpg" alt="IPad"
+														title="IPad" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg" title="IPad"
+														alt="IPad" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">IPad</a>
+													</h4>
+													<p class="price">
+														$123.20
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/2-268x268.jpg" alt="Tablet"
+														title="Tablet" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/10-268x268.jpg"
+														title="Tablet" alt="Tablet" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Tablet</a>
+													</h4>
+													<p class="price">
+														$1,202.00
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/9-268x268.jpg" alt="Speaker"
+														title="Speaker" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/10-268x268.jpg"
+														title="Speaker" alt="Speaker" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Speaker</a>
+													</h4>
+													<p class="price">
+														$2,000.00
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+														<span class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/10-268x268.jpg"
+														alt="Sony TV" title="Sony TV" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg"
+														title="Sony TV" alt="Sony TV" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Sony
+															TV</a></h4>
+													<p class="price">
+														<span class="price-new">$116.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/8-268x268.jpg" alt="iPhone"
+														title="iPhone" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-268x268.jpg" title="iPhone"
+														alt="iPhone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">iPhone</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$110.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/13-268x268.jpg"
+														alt="Toaster" title="Toaster" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/4-268x268.jpg"
+														title="Toaster" alt="Toaster" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Toaster</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$110.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/1-268x268.jpg" alt="IWatch"
+														title="IWatch" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/11-268x268.jpg"
+														title="IWatch" alt="IWatch" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">IWatch</a>
+													</h4>
+													<p class="price">
+														<span class="price-new">$86.00</span><span
+															class="price-old">$122.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/7-268x268.jpg" alt="Casio"
+														title="Casio" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/1-268x268.jpg" title="Casio"
+														alt="Casio" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Casio</a>
+													</h4>
+													<p class="price">
+														$122.00
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box carousel brand">
+					<div class="page-title">
+						<h3>Brand Logo</h3>
+					</div>
+					<div class="brand-main">
+						<div class="row">
+							<div class="swiper-viewport">
+								<div id="carousel0" class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/1-76x40.png" alt="Starbucks"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/2-76x40.png" alt="Disney"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/3-76x40.png" alt="Dell"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/4-76x40.png"
+													alt="Harley Davidson" class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/5-76x40.png" alt="Canon"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/6-76x40.png"
+													alt="Burger King" class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/7-76x40.png" alt="Coca Cola"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+										<div class="swiper-slide col-sm-12">
+											<div class="text-center">
+												<img src="/image/cache/catalog/manufactures/8-76x40.png" alt="Coca Cola"
+													class="img-responsive m-auto" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination carousel0"></div>
+								<div class="swiper-pager">
+									<div class="swiper-button-prev"><i class="fa fa-caret-left"></i></div>
+									<div class="swiper-button-next"><i class="fa fa-caret-right"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					$('#carousel0').swiper({
+						mode: 'horizontal',
+						slidesPerView: 5,
+						paginationClickable: false,
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						loop: false,
+						autoplay: false,
+						autoplayDisableOnInteraction: true,
+						breakpoints: {
+							1340: {
+								slidesPerView: 4,
+								spaceBetween: 0
+							},
+							1199: {
+								slidesPerView: 3,
+								spaceBetween: 0
+							},
+							991: {
+								slidesPerView: 4,
+								spaceBetween: 0
+							},
+							540: {
+								slidesPerView: 3,
+								spaceBetween: 0
+							},
+							425: {
+								slidesPerView: 2,
+								spaceBetween: 0
+							},
+							300: {
+								slidesPerView: 1,
+								spaceBetween: 0
+							}
+						}
+					});
+				</script>
+			</div>
+			<aside id="column-right" class="col-sm-3 hidden-xs">
+				<div class="box all-products mt-30">
+					<div class="box-heading">
+						<div class="box-content bestseller">
+							<div class="page-title toggled">
+								<h3>Bestseller Products</h3>
+							</div>
+							<div class="block_box row">
+								<div id="bestseller-carousel" class="box-product  product-carousel  clearfix"
+									data-items="4">
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/7-80x80.jpg"
+														alt="Dell Laptop" title="Dell Laptop" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/1-80x80.jpg"
+														title="Dell Laptop" alt="Dell Laptop" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Dell
+															Laptop</a></h4>
+													<p class="price">
+														$122.00
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/14-80x80.jpg"
+														alt="Sony Headphone" title="Sony Headphone"
+														class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/1-80x80.jpg"
+														title="Sony Headphone" alt="Sony Headphone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Sony
+															Headphone</a></h4>
+													<p class="price">
+														<span class="price-new">$98.00</span><span
+															class="price-old">$242.00</span>
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/11-80x80.jpg"
+														alt="Microwaves" title="Microwaves" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/10-80x80.jpg"
+														title="Microwaves" alt="Microwaves" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">Microwaves</a>
+													</h4>
+													<p class="price">
+														$122.00
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-layout  col-xs-12">
+										<div class="product-thumb transition clearfix">
+											<div class="image">
+												<a href="">
+													<img src="/image/cache/catalog/products/5-80x80.jpg" alt="IPad"
+														title="IPad" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-80x80.jpg" title="IPad"
+														alt="IPad" />
+												</a>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+											<div class="thumb-description clearfix">
+												<div class="caption">
+													<h4 class="product-title"><a href="">IPad</a>
+													</h4>
+													<p class="price">
+														$123.20
+													</p>
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-viewport">
+					<div id="banner1" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="/image/cache/catalog/banners/cat-rightbanner-290x450.jpg"
+										alt="Right Banner" class="img-responsive" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-box">
+					<div class="page-title toggled">
+						<h3>Our Services</h3>
+					</div>
+					<div class="service-desc block-content clearfix">
+						<div class="service-item">
+							<div class="service">
+								<div class="service-icon">
+									<img src="image/icon/plane.png" alt="">
+								</div>
+								<div class="service-content">
+									<h4 class="promo-title">Free Worldwide Shipping</h4> <span class="promo-desc">On
+										order over $150</span>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service">
+								<div class="service-icon"><img src="image/icon/refund.png" alt=""></div>
+								<div class="service-content">
+									<h4 class="promo-title">Money Back Guarantee</h4> <span class="promo-desc">Cash
+										On
+										Delivery</span>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service">
+								<div class="service-icon"><img src="image/icon/gift-box.png" alt=""></div>
+								<div class="service-content">
+									<h4 class="promo-title">Special Gift Card</h4> <span class="promo-desc">Offer
+										special bonuses</span>
+								</div>
+							</div>
+						</div>
+						<div class="service-item">
+							<div class="service">
+								<div class="service-icon"><img src="image/icon/support.png" alt=""></div>
+								<div class="service-content">
+									<h4 class="promo-title">Professional Support</h4> <span class="promo-desc">Online
+										Support 24/7</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="special-countdown left-vertical-product">
+					<div class="countdown-carousel list-products">
+						<div class="page-title">
+							<h3>Deal of the day</h3>
+						</div>
+						<div class="countdown-inner">
+							<div id="special-count" class="box-product  special-count-carousel  clearfix">
+								<div class="product-layout  col-xs-12">
+									<div class="product-thumb transition">
+										<div class="image countdown-images">
+											<div class="special-image">
+												<a href="">
+													<img src="/image/cache/catalog/products/10-266x266.jpg"
+														alt="Sony TV" title="Sony TV" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-266x266.jpg"
+														title="Sony TV" alt="Sony TV" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+										</div>
+
+										<div class="thumb-description">
+											<div class="caption">
+												<div class="desc-inner">
+													<h4 class="product-title"><a href="">Sony
+															TV</a></h4>
+													<div class="price">
+														<span class="price-new">$116.00</span>
+														<span class="price-old">$122.00</span>
+														<span class="price-tax">Ex Tax: $95.00</span>
+													</div>
+
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+													<p class="description hidden">
+														Canon's press material for the EOS 5D states that it
+														'defines
+														(a) new D-SLR category', while we're not typically too
+														concerned
+														with marketing talk this particular statement is c..</p>
+												</div>
+											</div>
+											<div id="countdown_30" class="item-countdown aa" data-date="2022-01-31">
+											</div>
+										</div>
+										<script type="text/javascript">
+											jQuery(document).ready(function ($) {
+												$(".item-countdown").each(function () {
+													var date = $(this).data('date');
+													$(this).lofCountDown({
+														TargetDate: date,
+														DisplayFormat: "<div>%%D%% <span>Days</span></div><div>%%H%% <span>Hours</span></div><div>%%M%% <span>Min</span></div><div>%%S%% <span>Sec</span></div>"
+													});
+												});
+											});
+										</script>
+									</div>
+								</div>
+								<div class="product-layout  col-xs-12">
+									<div class="product-thumb transition">
+										<div class="image countdown-images">
+											<div class="special-image">
+												<a href="">
+													<img src="/image/cache/catalog/products/14-266x266.jpg"
+														alt="Sony Headphone" title="Sony Headphone"
+														class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/1-266x266.jpg"
+														title="Sony Headphone" alt="Sony Headphone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+										</div>
+
+										<div class="thumb-description">
+											<div class="caption">
+												<div class="desc-inner">
+													<h4 class="product-title"><a href="">Sony
+															Headphone</a></h4>
+													<div class="price">
+														<span class="price-new">$98.00</span>
+														<span class="price-old">$242.00</span>
+														<span class="price-tax">Ex Tax: $80.00</span>
+													</div>
+
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+													<p class="description hidden">
+														Imagine the advantages of going big without slowing down.
+														The
+														big 19&quot; 941BW monitor combines wide aspect ratio with
+														fast
+														pixel response time, for bigger images, more room t..</p>
+												</div>
+											</div>
+											<div id="countdown_33" class="item-countdown aa" data-date="2022-02-02">
+											</div>
+										</div>
+										<script type="text/javascript">
+											jQuery(document).ready(function ($) {
+												$(".item-countdown").each(function () {
+													var date = $(this).data('date');
+													$(this).lofCountDown({
+														TargetDate: date,
+														DisplayFormat: "<div>%%D%% <span>Days</span></div><div>%%H%% <span>Hours</span></div><div>%%M%% <span>Min</span></div><div>%%S%% <span>Sec</span></div>"
+													});
+												});
+											});
+										</script>
+									</div>
+								</div>
+								<div class="product-layout  col-xs-12">
+									<div class="product-thumb transition">
+										<div class="image countdown-images">
+											<div class="special-image">
+												<a href="">
+													<img src="/image/cache/catalog/products/3-266x266.jpg"
+														alt="Samsung TV" title="Samsung TV" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-266x266.jpg"
+														title="Samsung TV" alt="Samsung TV" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+										</div>
+
+										<div class="thumb-description">
+											<div class="caption">
+												<div class="desc-inner">
+													<h4 class="product-title"><a href="">Samsung
+															TV</a></h4>
+													<div class="price">
+														<span class="price-new">$86.00</span>
+														<span class="price-old">$98.00</span>
+														<span class="price-tax">Ex Tax: $70.00</span>
+													</div>
+
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+													<p class="description hidden">
+
+														Engineered with pro-level features and performance, the
+														12.3-effective-megapixel D300 combines brand new
+														technologies
+														with advanced features inherited from Nikon&#39;s newly..
+													</p>
+												</div>
+											</div>
+											<div id="countdown_31" class="item-countdown aa" data-date="2022-07-10">
+											</div>
+										</div>
+										<script type="text/javascript">
+											jQuery(document).ready(function ($) {
+												$(".item-countdown").each(function () {
+													var date = $(this).data('date');
+													$(this).lofCountDown({
+														TargetDate: date,
+														DisplayFormat: "<div>%%D%% <span>Days</span></div><div>%%H%% <span>Hours</span></div><div>%%M%% <span>Min</span></div><div>%%S%% <span>Sec</span></div>"
+													});
+												});
+											});
+										</script>
+									</div>
+								</div>
+								<div class="product-layout  col-xs-12">
+									<div class="product-thumb transition">
+										<div class="image countdown-images">
+											<div class="special-image">
+												<a href="">
+													<img src="/image/cache/catalog/products/8-266x266.jpg" alt="iPhone"
+														title="iPhone" class="img-responsive" />
+													<img class="img-responsive hover-img"
+														src="/image/cache/catalog/products/9-266x266.jpg" title="iPhone"
+														alt="iPhone" />
+												</a>
+												<div class="sale-text"><span class="section-sale">On Sale!</span>
+												</div>
+												<div class="button-group">
+													<button type="button" class="wishlist" data-toggle="tooltip"
+														title="Add To WishList" onclick="wishlist.add('36');"><i
+															class="fa fa-heart"></i></button>
+													<button type="button" data-toggle="tooltip" class="quickview-button"
+														title="Quickview"
+														onclick="quickView.ajaxView('?route=product/quickview&product_id=36');"><i
+															class="fa fa-eye"></i></button>
+													<button type="button" class="compare" data-toggle="tooltip"
+														title="Add To Compare" onclick="compare.add('36');"><i
+															class="fa fa-exchange"></i></button>
+												</div>
+											</div>
+										</div>
+
+										<div class="thumb-description">
+											<div class="caption">
+												<div class="desc-inner">
+													<h4 class="product-title"><a href="">iPhone</a>
+													</h4>
+													<div class="price">
+														<span class="price-new">$110.00</span>
+														<span class="price-old">$122.00</span>
+														<span class="price-tax">Ex Tax: $90.00</span>
+													</div>
+
+													<div class="rating">
+														<span class="fa fa-stack"><i
+																class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span> <span
+															class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i
+																class="fa fa-star-o fa-stack-2x"></i></span>
+													</div>
+
+													<button type="button" class="addcart" title="Add to Cart"
+														onclick="">Add to Cart</button>
+													<p class="description hidden">
+
+														Video in your pocket.
+
+														Its the small iPod with one very big idea: video. The worlds
+														most popular music player now lets you enjoy movies, TV
+														shows,
+														and more on a two-inc..</p>
+												</div>
+											</div>
+											<div id="countdown_36" class="item-countdown aa" data-date="2022-07-10">
+											</div>
+										</div>
+										<script type="text/javascript">
+											jQuery(document).ready(function ($) {
+												$(".item-countdown").each(function () {
+													var date = $(this).data('date');
+													$(this).lofCountDown({
+														TargetDate: date,
+														DisplayFormat: "<div>%%D%% <span>Days</span></div><div>%%H%% <span>Hours</span></div><div>%%M%% <span>Min</span></div><div>%%S%% <span>Sec</span></div>"
+													});
+												});
+											});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						deal();
+					});
+					function deal() {
+						const additional1 = $('html').attr('dir');
+
+						$('.special-count-carousel').each(function () {
+							// if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+							$(this).addClass('owl-carousel owl-theme');
+							const items = $(this).data('items') || 1;
+							const sliderOptions = {
+								loop: false,
+								nav: true,
+								navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+								dots: false,
+								items: items,
+								responsiveRefreshRate: 200,
+								responsive: {
+									0: { items: 1 },
+									481: { items: ((items + 1) > 1) ? (items + 1) : 1 },
+									601: { items: ((items + 2) > 1) ? (items + 2) : 1 },
+									992: { items: items }
+								}
+							};
+							if (additional1 == 'rtl') sliderOptions['rtl'] = true;
+							$(this).owlCarousel(sliderOptions);
+							// }
+						});
+					}
+
+				</script>
+
+				<div class="swiper-viewport">
+					<div id="banner2" class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="/image/cache/catalog/banners/cat-rightbanner2-290x450.jpg"
+										alt="Right Banner2" class="img-responsive" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+	</div>
+	<footer class="mt-30">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="footer-main">
+						<div class="col-md-4">
+							<div class="position-footer-left">
+								<div class="footer_aboutus">
+									<div class="about-cms"> <a href="#"> <img alt=""
+												src="image/catalog/footer-logo.png"> </a>
+										<div class="footer-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										</div>
+									</div>
+								</div>
+								<div class="social-media">
+									<div class="social-media-inner"> <a href="#"><i class="fa fa-facebook"></i></a> <a
+											href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+												class="fa fa-youtube-play"></i></a> <a href="#"><i
+												class="fa fa-google-plus"></i></a> <a href="#"><i
+												class="fa fa-pinterest-p"></i></a> </div>
+								</div>
+								<div class="contact-detail col-sm-3">
+									<h5 class="toggled title">contact info</h5>
+									<ul class="list-unstyled">
+										<li>
+											<div class="site"> <i class="fa fa-map-marker"></i>
+												<div class="contact_site">71 Pennington Lane Vernon Rockville, CT 06066
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="phone"> <i class="fa fa-phone"></i>
+												<div class="contact_site">+91 123 456 789</div>
+											</div>
+										</li>
+										<li>
+											<div class="fax"> <i class="fa fa-fax"></i>
+												<div class="contact_site">0123-456-789</div>
+											</div>
+										</li>
+										<li>
+											<div class="email"> <i class="fa fa-envelope"></i>
+												<div class="contact_site"> <a
+														href="mailto:info@Yourstore.com">demo@Yourstore.com</a> </div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-right col-md-8">
+							<div class="footer-inner row">
+								<div class="col-sm-3">
+									<div class="footer-content">
+										<h5>Information</h5>
+										<ul class="list-unstyled">
+											<li><a href="">About
+													Us</a></li>
+											<li><a href="">Delivery
+													Information</a></li>
+											<li><a href="">Privacy
+													Policy</a></li>
+											<li><a href="">Terms
+													&amp; Conditions</a></li>
+											<li><a href="">Contact
+													Us</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footer-content">
+										<h5>My Account</h5>
+										<ul class="list-unstyled">
+											<li><a href="">My
+													Account</a></li>
+											<li><a href="">Order
+													History</a></li>
+											<li><a href="">Wish
+													List</a></li>
+											<li><a href="">Newsletter</a>
+											</li>
+											<li><a href="">Returns</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="footer-content">
+										<h5>Extras</h5>
+										<ul class="list-unstyled">
+											<li><a href="">Brands</a>
+											</li>
+											<li><a href="">Gift
+													Certificates</a></li>
+											<li><a href="">Affiliate</a>
+											</li>
+											<li><a href="">Specials</a>
+											</li>
+											<li><a href="">Site
+													Map</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="footer_bottom col-xs-12">
+								<p class="powered">Powered By <a href="">OpenCart</a> Your Store
+									&copy; 2021</p>
+								<div class="position-footer-bottom">
+									<div class="payment-link"> <img src="image/catalog/payment.png" alt=""> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- top scroll -->
+	<a href="#" class="scrollToTop back-to-top" data-toggle="tooltip" title="Top"><i class="fa fa-caret-up"></i></a>
+</body>
+
+</html>
